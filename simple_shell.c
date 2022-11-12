@@ -1,10 +1,9 @@
-#include<stdio.h>
+#include<simple_shell.h>
 
 /**
- * main - calls other function
- * @argc - counts arguments passed
- * @argv -Pointer pointing to lists of arguments
- * @i - index
+ * main - Accepts arguments
+ * @argc - argument count
+ * @argv - argument vector
  *
  * Return: always 0
  */
