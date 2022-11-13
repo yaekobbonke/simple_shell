@@ -1,4 +1,4 @@
-#include<simple_shell.h>
+#include "simple_shell.h"
 
 /**
  * main - Accepts arguments
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	printf("The number of aruments passed is %d\n", argc);
+	printf("The number of aruments passed is %d\n", argc - 1);
 	for (i = 0; i < argc; i++)
 	{
 		printf("argv[%d] - %s\n", i, argv[i]);
