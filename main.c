@@ -2,12 +2,21 @@
 
 /**
  * main - calls excve function
+ * argc - argumnet count
+ * argv - argument vector
  *
  * return: Always 0
- */
-int main(void)
+ i*/
+int main(int argc, char *argv[])
 {
-	printf("simple shell\n");
+	int i;
+
+	(void)argv;
+	
+	for (i = 0; i < argc; i++)
+	{
+	printf("argv[%d] = %s\n", i, argv[i]);
+	}
 
 	return (0);
 }

@@ -5,14 +5,17 @@
  *
  * return: always 0
  */
-int main(void)
+int main(int ac, char **av, char **env)
 {
 	int i;
 
-	i = 0;
-	while(environ[i] != 0)
+	(void)ac;
+	(void)av;
+
+	i =0;
+	while(env[i] != 0)
 	{
-		printf("%s\n", environ[i]);
+		printf("%s\n", env[i]);
 		i++;
 	}
 

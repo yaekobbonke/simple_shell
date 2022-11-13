@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char *argv[] = { "Hello","Simple", "Shell", NULL};
+	char *argv[] = { "./main", NULL};
 
 	int val = execve("./main", argv,  NULL);
 	if(val == -1)
